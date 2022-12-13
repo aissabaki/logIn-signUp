@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b9b530dff2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Log in & Sign up Form</title>
+  </head>
+  <body>
+    <div class="info">
+      <p>you can create a new account and login / basic stuff<span>.</span></p>
+    </div>
+    <div class="container">
+      <form class="form" id="signUpForm">
+        <div class="form-title">
+          <h1 class="title">Create new account<span>.</span></h1>
+        </div>
+        <p class="form__text">
+          Already a Member?<a
+            class="form__link"
+            href="pages/login.html"
+            id="loginLink"
+            >Log in</a
+          >
+        </p>
+
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupUsername"
+            class="form__input"
+            autofocus
+            placeholder="Username"
+            required
+          />
+          <img src="src/icons/user.png" alt="user icon" class="input__icon" />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Email Address"
+            id="email"
+            required
+          />
+          <img
+            src="src/icons/email.png"
+            alt="email icon"
+            class="input__icon"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+            id="passWord"
+            required
+          />
+          <img
+            src="src/icons/visible.png"
+            alt="see password icon"
+            class="input__icon password__icon"
+            onclick="seePassWord()"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Confirm password"
+            id="ConfirmPassWord"
+            required
+          />
+
+          <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" id="createAccountBtn">
+          Create account
+        </button>
+      </form>
+    </div>
+
+    <script src="src/js srcipt/signup.js"></script>
+  </body>
+</html>

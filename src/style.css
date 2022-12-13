@@ -1,0 +1,141 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: #525561;
+}
+
+.container {
+  max-width: 90%;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.form {
+  max-width: 75%;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  border-radius: 0.8rem;
+  background-image: linear-gradient(
+    85deg,
+    hsl(229deg 17% 18%) 0%,
+    hsl(228deg 18% 22%) 29%,
+    hsl(227deg 17% 26%) 41%,
+    hsl(228deg 17% 30%) 50%,
+    hsl(230deg 17% 34%) 56%,
+    hsl(229deg 17% 38%) 62%,
+    hsl(229deg 17% 42%) 66%,
+    hsl(229deg 17% 46%) 70%,
+    hsl(229deg 17% 50%) 74%,
+    hsl(230deg 17% 53%) 77%,
+    hsl(230deg 17% 57%) 80%,
+    rgb(0, 0, 0, 0.4)
+  ),
+  url('images/image01.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -1px 9px 26px -1px rgba(26, 25, 26, 0.6);
+}
+
+.login-form {
+  max-width: 80%;
+}
+
+.title {
+  color: #f7f7f7;
+  margin: 0.5rem auto;
+}
+
+.title > span {
+  color: #2fa4ff;
+  font-size: 1.3em;
+}
+
+.form__input {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3d404b;
+  color: #f7f7f7;
+  margin: 0.5rem auto;
+  width: 80%;
+  height: 1.6rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1em;
+}
+
+.form__input:focus {
+  border: 1.5px solid #2fa4ff;
+}
+
+.input__icon {
+  width: 20px;
+  margin-left: -2.2rem;
+  margin-bottom: -0.5rem;
+}
+.password__icon {
+  cursor: pointer;
+}
+.form__button {
+  cursor: pointer;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 2.2rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #2f6aff;
+  color: #f7f7f7;
+  font-size: 1.1em;
+  transition: 0.4s ease-in-out;
+}
+
+.form__button:hover {
+  background-color: #3f3fff;
+}
+
+.form__text {
+  color: #ffeded;
+}
+
+.form__link {
+  color: #2fa4ff;
+}
+
+.form__message,
+.form__input-error-message {
+  display: none;
+  color: rgb(255, 0, 0);
+}
+
+.form__message--success {
+  color: rgb(10, 232, 10);
+}
+.show__input--error,
+.form__message--error,
+.form__message--success {
+  display: block;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+.info {
+  max-width: 70%;
+  margin: 2rem auto;
+  color: rgb(14, 210, 14);
+  text-align: center;
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) {
+  .form,
+  .login-form {
+    max-width: 50%;
+  }
+  .form__input {
+    width: 50%;
+  }
+}
